@@ -70,7 +70,7 @@ void Neurone::correction(double taux_apprentissage)
     else
     {
         //On fait la somme des valeurs d'erreur de la couche suivante
-        double somme_erreur_prov;
+        double somme_erreur_prov = 0;
 
         for(int i = 0; i < tab_neurone_sortie.size(); i++)
         {
